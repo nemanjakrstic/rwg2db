@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "dependencies": {
+        "config": "^3.2.5",
+        "mongodb": "^3.5.2"
+    }
+}
