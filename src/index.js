@@ -8,9 +8,9 @@ const feed = require(path.relative(__dirname, process.argv[2]));
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
 
 mongodb.connect(config.get('mongodb.url'), options).then(async client => {
-    const db = client.db('rwg_feeds');
+    const db = client.db(config.get('mongodb.db'));
 
-    if (feed.availability) {
+    if (feed.service_availability) {
         await insertMany(db, 'availability', feed.service_availability[0].availability);
     } else if (feed.merchant) {
         await insertMany(db, 'merchants', feed.merchant);

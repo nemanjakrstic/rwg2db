@@ -14,7 +14,7 @@ $ nano config/local.json
 # Usage Examples
 
 ```
-$ npm start merchants-1580878829.json
-$ npm start services-1580878829.json
-$ npm start availability-1580878830.json
+$ npm start ../google-reserve/merchants-1580878829.json
+$ npm start ../google-reserve/services-1580878829.json
+$ npm start ../google-reserve/availability-1580878830.json
 ```
